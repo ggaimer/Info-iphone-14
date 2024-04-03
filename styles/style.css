@@ -1,0 +1,308 @@
+@import "./fonts.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Contant */
+
+.header__nav {
+  background: rgb(10, 10, 10);
+  padding: 20px 0;
+}
+
+.header__nav-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header__nav-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header__nav-list,
+.header__nav-num {
+  width: 40%;
+}
+
+.header__nav-num.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__nav-list-link,
+.header__nav-num {
+  color: rgb(113, 113, 113);
+  font-family: "IR";
+  font-size: 24px;
+  transition: all 250ms ease;
+}
+
+.header__nav-list-link:hover,
+.header__nav-num:hover {
+  color: whitesmoke;
+}
+
+.header__nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 71px 0px 40px 0px;
+}
+
+.header__nav-content-title {
+  color: rgb(73, 14, 132);
+  font-family: "IB";
+  font-size: 64px;
+}
+
+.header__nav-content-link {
+  border-radius: 30px;
+  background: rgb(73, 14, 132);
+  color: rgb(255, 255, 255);
+  font-family: "IB";
+  font-size: 24px;
+  font-weight: 700;
+  padding: 19px 117px;
+  transition: all 250ms ease-in;
+}
+
+.header__nav-content-link:hover {
+  opacity: 0.9;
+}
+
+.header__nav-content-link:active {
+  transform: translateY(10px);
+}
+
+.header__nav-content {
+  background: rgb(245, 245, 247);
+}
+
+.section__iphone-info {
+  margin-top: 50px;
+}
+
+.iphone__info-block-text-top {
+  color: rgb(10, 10, 10);
+  font-family: "IR";
+  font-size: 14px;
+  width: 100%;
+}
+
+.iphone__info-block-text-bottom {
+  color: rgb(10, 10, 10);
+  font-family: "IB";
+  font-size: 20px;
+  width: 100%;
+}
+
+.iphone__info-block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 560px;
+  padding-left: 50px;
+}
+
+.iphone__info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__iphone-colors {
+  margin-top: 60px;
+}
+
+.iphone__colors-box-title {
+  color: rgb(113, 113, 113);
+  font-family: "IB";
+  font-size: 32px;
+  text-align: center;
+}
+
+.iphone__colors-block-descp-title {
+  color: rgb(10, 10, 10);
+  font-family: "IB";
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.iphone__colors-block-descp-text {
+  color: grey;
+  font-family: "IR";
+  font-size: 14px;
+}
+
+.iphone__colors-block-descp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.iphone__colors-block-descp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iphone__colors-items {
+  display: flex;
+  gap: 80px;
+  transition: all 250ms ease;
+  margin-top: 50px;
+}
+
+.iphone__colors-item {
+  transition: all 250ms;
+}
+
+.iphone__colors-item:hover {
+  transform: translateY(10px);
+}
+
+.iphone__from-title {
+  color: rgb(255, 255, 255);
+  font-family: "IB";
+  font-size: 32px;
+  margin-bottom: 72px;
+}
+
+.section__iphone-form {
+  margin-top: 150px;
+}
+
+.iphone__form-box-input-name::placeholder,
+.iphone__form-box-input-num::placeholder {
+  color: grey;
+  font-family: "IR";
+  font-size: 14px;
+}
+
+.iphone__form-box-input-name,
+.iphone__form-box-input-num {
+  border-bottom: 1px solid rgb(245, 245, 245);
+  max-width: 400px;
+  width: 100%;
+  padding: 0px 0px 10px 0px;
+  color: white;
+}
+
+.iphone__form-box-left {
+  max-width: 600px;
+  width: 100%;
+  height: 600px;
+  background: rgb(87, 75, 99);
+  padding: 75px 40px 80px 100px;
+}
+
+.iphone__from-box-btn {
+  color: rgb(73, 14, 132);
+  font-family: "IB";
+  font-size: 14px;
+  padding: 16px 81px;
+  border-radius: 30px;
+  background: rgb(255, 255, 255);
+  transition: all 250ms ease-in;
+  margin-left: 70px;
+}
+
+.iphone__from-box-btn:hover {
+  background: rgb(73, 14, 132);
+  color: white;
+}
+
+.iphone__from-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.iphone__form-box-inputs-descp {
+  color: grey;
+  font-family: "IR";
+  font-size: 14px;
+  padding: 60px 0;
+}
+
+.iphone__form-box {
+  display: flex;
+}
+
+.footer__nav {
+  background: rgb(10, 10, 10);
+  padding: 20px 0;
+}
+
+.footer__nav-box-politik {
+  color: rgb(113, 113, 113);
+  font-family: "IR";
+  font-size: 14px;
+  transition: all 250ms ease;
+}
+
+.footer__nav-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__nav-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.footer__nav-num,
+.footer__nav-box-politik {
+  width: 40%;
+}
+
+.footer__nav-num.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__nav-num {
+  color: rgb(113, 113, 113);
+  font-family: "IR";
+  font-size: 24px;
+  transition: all 250ms ease;
+}
+
+.footer__nav-num:hover,
+.footer__nav-box-politik:hover {
+  color: white;
+}
